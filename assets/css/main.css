@@ -21,10 +21,18 @@
     line-height: 26px;
 }
 
-.header__navbar-user {
-    display: flex;
+.header__navbar-signup-in.user--active {
+    display: none;
+}
+
+.header__navbar-item.header__navbar-user {
+    display: none;
     justify-items: center;
     position: relative;
+}
+
+.header__navbar-user.user--active {
+    display: flex;
 }
 
 .header__navbar-user-img {
@@ -714,6 +722,7 @@
     background-color: var(--white-color);
     border-radius: 5px;
     overflow: hidden;
+    display: none;
 }
 
 .auth-form__container {
@@ -832,6 +841,10 @@
 
 .auth-form__help-forgot {
     color: var(--primary-color);
+}
+
+.signin--active .signin-form, .signup--active .signup-form {
+    display: block;
 }
 
 .container {
